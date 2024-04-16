@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name" translatable="false">Expenses</string>
+
+    <!-- TopAppBar -->
+    <string name="top_app_bar_icon_button_grid_open_content_desc">Open Grid Mode</string>
+    <string name="top_app_bar_icon_button_grid_close_content_desc">Close Grid Mode</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_upcoming">Upcoming</string>
+    <string name="bottom_nav_settings">Settings</string>
+
+    <!-- Home Tab -->
+    <string name="home_title" translatable="false">Recurring Expense Tracker</string>
+    <string name="home_summary_monthly">Monthly</string>
+    <string name="home_summary_weekly">Weekly</string>
+    <string name="home_summary_yearly">Yearly</string>
+    <string name="home_add_expense_fab_content_description">Add expense</string>
+
+    <!-- Edit expense Bottom Sheet -->
+    <string name="edit_expense_button_add">Add Expense</string>
+    <string name="edit_expense_button_delete">Delete</string>
+    <string name="edit_expense_button_save">Save</string>
+    <string name="edit_expense_description">Description (optional)</string>
+    <string name="edit_expense_description_placeholder">e.g. special subscription</string>
+    <string name="edit_expense_invalid_input">Invalid input</string>
+    <string name="edit_expense_name">Name</string>
+    <string name="edit_expense_name_placeholder">e.g. Netflix</string>
+    <string name="edit_expense_price">Price</string>
+    <string name="edit_expense_recurrence">Recurrence</string>
+    <string name="edit_expense_recurrence_day">Day(s)</string>
+    <string name="edit_expense_recurrence_day_short">D</string>
+    <string name="edit_expense_recurrence_week">Week(s)</string>
+    <string name="edit_expense_recurrence_week_short">W</string>
+    <string name="edit_expense_recurrence_month">Month(s)</string>
+    <string name="edit_expense_recurrence_month_short">M</string>
+    <string name="edit_expense_recurrence_year">Year(s)</string>
+    <string name="edit_expense_recurrence_year_short">Y</string>
+    <string name="edit_expense_first_payment">First Payment (optional)</string>
+    <string name="edit_expense_first_payment_placeholder">e.g. today</string>
+    <string name="edit_expense_color">Color</string>
+
+    <!-- Upcoming Payments Tab -->
+    <string name="upcoming_title">Upcoming Payments</string>
+    <string name="upcoming_placeholder_title">Define a first payment date for expenses to see an overview of upcoming payments</string>
+    <string name="upcoming_time_remaining_today">today</string>
+    <string name="upcoming_time_remaining_tomorrow">tomorrow</string>
+    <string name="upcoming_time_remaining_days">in %1$d days</string>
+
+    <!-- Settings Tab -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_backup">Backup</string>
+    <string name="settings_backup_create">Create backup</string>
+    <string name="settings_backup_restore">Restore backup</string>
+    <string name="settings_backup_created_toast">Backup successful</string>
+    <string name="settings_backup_not_created_toast">Backup failed</string>
+    <string name="settings_backup_restored_toast">Backup restored</string>
+    <string name="settings_backup_not_restored_toast">Backup could not be restored</string>
+
+    <!-- General -->
+    <string name="dialog_ok">OK</string>
+    <string name="recurring_expense_overview_toggle_anim_label">Animates between row mode and grid mode</string>
+    <string name="login">Login</string>
+    <string name="email">email\n</string>
+    <string name="password">Password\n</string>
+    <string name="log_in">Log In\n</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_inn">Log In</string>
+</resources>

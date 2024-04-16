@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "70855512110",
+    "project_id": "chatapplication-51c39",
+    "storage_bucket": "chatapplication-51c39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70855512110:android:7722898a9bfb4e880ccfbf",
+        "android_client_info": {
+          "package_name": "com.example.chatapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyUtQ5UrXvIN1Lnims5IICgcJdbKNoZaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70855512110:android:8af1368a6195e88d0ccfbf",
+        "android_client_info": {
+          "package_name": "de.dbauer.expensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyUtQ5UrXvIN1Lnims5IICgcJdbKNoZaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
