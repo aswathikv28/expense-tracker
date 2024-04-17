@@ -22,7 +22,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/app_logo"
         android:layout_marginTop="20dp"
-        android:hint="@string/email"
+        android:hint="@string/enter_your_email"
         android:paddingLeft="13dp"
 
         android:layout_marginLeft="20dp"
@@ -34,7 +34,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/edt_email"
         android:layout_marginTop="10dp"
-        android:hint="@string/password"
+        android:hint="@string/enter_your_password"
         android:paddingLeft="13dp"
 
         android:layout_marginLeft="20dp"

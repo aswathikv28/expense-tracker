@@ -66,4 +66,6 @@
     <string name="log_in">Log In\n</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_inn">Log In</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
 </resources>

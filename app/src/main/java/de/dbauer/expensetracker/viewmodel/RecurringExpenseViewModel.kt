@@ -146,22 +146,46 @@ class RecurringExpenseViewModel(
 
     private fun updateExpenseSummary() {
         var totalMonthlyExpense = 0f
+        var totalYearlyExpense = 0f
+        var totalWeeklyExpense = 0f
+
         _recurringExpenseData.forEach { recurringExpense ->
-            val monthlyFrequency = when (recurringExpense.recurrence) {
-                Recurrence.Daily -> 30
-                Recurrence.Weekly -> 4
-                Recurrence.Monthly -> 1
-                Recurrence.Yearly -> 1 / 12
+            val monthlyExpense: Float
+            val yearlyExpense: Float
+            val weeklyExpense: Float
+
+            when (recurringExpense.recurrence) {
+                Recurrence.Daily -> {
+                    val dailyPrice = recurringExpense.price * recurringExpense.everyXRecurrence
+                    weeklyExpense = dailyPrice * 7
+                    monthlyExpense = dailyPrice * 30 // Assuming 30 days in a month
+                    yearlyExpense = dailyPrice * 365 // Assuming 365 days in a year
+                }
+                Recurrence.Weekly -> {
+                    weeklyExpense = recurringExpense.price * recurringExpense.everyXRecurrence
+                    monthlyExpense = weeklyExpense * 4 // Assuming 4 weeks in a month
+                    yearlyExpense = monthlyExpense * 12
+                }
+                Recurrence.Monthly -> {
+                    monthlyExpense = recurringExpense.price * recurringExpense.everyXRecurrence
+                    yearlyExpense = monthlyExpense * 12
+                    weeklyExpense = monthlyExpense / 4 // Assuming 4 weeks in a month
+                }
+                Recurrence.Yearly -> {
+                    yearlyExpense = recurringExpense.price * recurringExpense.everyXRecurrence
+                    monthlyExpense = yearlyExpense / 12
+                    weeklyExpense = monthlyExpense / 4 // Assuming 4 weeks in a month
+                }
             }
 
-            val monthlyExpense = recurringExpense.price * recurringExpense.everyXRecurrence
-
             totalMonthlyExpense += monthlyExpense
+            totalYearlyExpense += yearlyExpense
+            totalWeeklyExpense += weeklyExpense
         }
 
-        _weeklyExpense = (totalMonthlyExpense / (52 / 12f)).toCurrencyString()
+        _weeklyExpense = totalWeeklyExpense.toCurrencyString()
         _monthlyExpense = totalMonthlyExpense.toCurrencyString()
-        _yearlyExpense = (totalMonthlyExpense * 12).toCurrencyString()
+        _yearlyExpense = totalYearlyExpense.toCurrencyString()
     }
 
 
